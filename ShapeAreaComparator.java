@@ -58,15 +58,6 @@ public class ShapeAreaComparator implements Comparator<Shape>
 	public boolean equals(Shape s1, Shape s2)
 	{
 		// TODO: complete this...
-		int results = compare(s1, s2);
-		
-		if(results == 0)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
+		return compare(s1, s2) == 0;
 	}
 }

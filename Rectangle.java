@@ -22,6 +22,8 @@ public class Rectangle extends Polygon
 		
 		super.sideLengths.add(height);
 		super.sideLengths.add(width);
+		super.sideLengths.add(height);
+		super.sideLengths.add(width);
 	}
 	
 	/**

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 
 /**
@@ -23,6 +24,7 @@ public class ShapeSorter
 	public ShapeSorter()
 	{
 		// TODO: complete this...
+		shapes = new ArrayList<Shape>();
 	}
 
 	/**
@@ -33,6 +35,7 @@ public class ShapeSorter
 	public void addShape(Shape s)
 	{
 		// TODO: complete this...
+		shapes.add(s);
 	}
 
 	/**
@@ -40,9 +43,12 @@ public class ShapeSorter
 	 *
 	 * It is recommended that you use Collections.sort().
 	 */
+	
+	//NEED HELP WITH THIS
 	public void sortShapes()
 	{
 		// TODO: complete this...
+		Collections.sort(shapes);
 	}
 
 	/**
@@ -53,9 +59,11 @@ public class ShapeSorter
 	 * @param comparator The shape comparing object that defines the ordering of the shapes (how to
 	 * sort them).
 	 */
+	// NEED HELP WITH THIS
 	public void sortShapes(Comparator<Shape> comparator)
 	{
 		// TODO: complete this...
+		Collections.sort(shapes, comparator);
 	}
 
 	/**
@@ -64,10 +72,17 @@ public class ShapeSorter
 	 * @return The toString of all shared shapes, concatenated. toStrings are added
 	 * in the order that they appear in the list.
 	 */
+	//HELP WITH THIS
 	@Override
 	public String toString()
 	{
 		// TODO: complete this...
+		String answer = "";
+		for(int i = 0; i < shapes.size(); ++i)
+		{
+			answer = answer.concat(shapes.get(i).toString() + "\n");
+		}
+		return answer;
 	}
 
 }
